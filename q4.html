@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var name = prompt("Enter your name ");
+        var upperCase = 0;
+        var lowerCase = 0;
+
+        for (let i = 0; i<= name.length ; i++)
+        {
+            if (name [i] >= "a" && name [i] <= "z")
+            {
+                lowerCase++;
+            }
+            else if (name [i] >= "A" && name [i] <= "Z" )
+            {
+                upperCase++;
+            }
+        }
+        console.log("The length of Your Name is : "+ name.length );
+        console.log("There are "+ upperCase +" Uppercase word in your name" );
+        console.log("There are "+ lowerCase +" lowercase word in your name" );
+    </script>
+</body>
+</html>
